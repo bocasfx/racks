@@ -1,0 +1,234 @@
+{
+  "version": "0.5.0",
+  "modules": [
+    {
+      "plugin": "Core",
+      "model": "AudioInterface",
+      "pos": [
+        750.0,
+        0.0
+      ],
+      "params": [],
+      "data": {
+        "driver": 5,
+        "device": 4,
+        "sampleRate": 44100.0,
+        "blockSize": 256
+      }
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "VCO",
+      "pos": [
+        0.0,
+        0.0
+      ],
+      "params": [
+        1.0,
+        0.0,
+        -32.400062561035156,
+        0.0,
+        0.5,
+        0.70499998331069946,
+        0.33599996566772461
+      ]
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "ADSR",
+      "pos": [
+        300.0,
+        0.0
+      ],
+      "params": [
+        0.15600013732910156,
+        0.0,
+        0.0,
+        0.58500146865844727
+      ]
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "SEQ3",
+      "pos": [
+        0.0,
+        380.0
+      ],
+      "params": [
+        2.1679856777191162,
+        0.0,
+        0.0,
+        8.0,
+        1.7699992656707764,
+        0.0,
+        0.0,
+        0.0,
+        0.68999975919723511,
+        0.0,
+        0.0,
+        0.0,
+        1.394999623298645,
+        0.0,
+        0.0,
+        0.0,
+        1.1699998378753662,
+        0.0,
+        0.0,
+        0.0,
+        1.6499993801116943,
+        0.0,
+        0.0,
+        0.0,
+        1.484999418258667,
+        0.0,
+        0.0,
+        0.0,
+        1.8749996423721313,
+        0.0,
+        0.0,
+        0.0,
+        1.2599997520446777,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "data": {
+        "running": true,
+        "gates": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "gateMode": 0
+      }
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "VCA",
+      "pos": [
+        420.0,
+        0.0
+      ],
+      "params": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "VCF",
+      "pos": [
+        510.0,
+        0.0
+      ],
+      "params": [
+        0.66700011491775513,
+        0.5,
+        0.0,
+        -0.66600006818771362,
+        0.60149985551834106
+      ]
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "VCMixer",
+      "pos": [
+        150.0,
+        0.0
+      ],
+      "params": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "ADSR",
+      "pos": [
+        630.0,
+        0.0
+      ],
+      "params": [
+        0.0,
+        0.42950016260147095,
+        0.2479998916387558,
+        0.27649959921836853
+      ]
+    }
+  ],
+  "wires": [
+    {
+      "outputModuleId": 2,
+      "outputId": 0,
+      "inputModuleId": 4,
+      "inputId": 3
+    },
+    {
+      "outputModuleId": 1,
+      "outputId": 0,
+      "inputModuleId": 6,
+      "inputId": 1
+    },
+    {
+      "outputModuleId": 4,
+      "outputId": 1,
+      "inputModuleId": 5,
+      "inputId": 3
+    },
+    {
+      "outputModuleId": 5,
+      "outputId": 0,
+      "inputModuleId": 0,
+      "inputId": 0
+    },
+    {
+      "outputModuleId": 5,
+      "outputId": 0,
+      "inputModuleId": 0,
+      "inputId": 1
+    },
+    {
+      "outputModuleId": 1,
+      "outputId": 1,
+      "inputModuleId": 6,
+      "inputId": 3
+    },
+    {
+      "outputModuleId": 1,
+      "outputId": 2,
+      "inputModuleId": 6,
+      "inputId": 5
+    },
+    {
+      "outputModuleId": 6,
+      "outputId": 0,
+      "inputModuleId": 4,
+      "inputId": 5
+    },
+    {
+      "outputModuleId": 3,
+      "outputId": 0,
+      "inputModuleId": 2,
+      "inputId": 4
+    },
+    {
+      "outputModuleId": 7,
+      "outputId": 0,
+      "inputModuleId": 1,
+      "inputId": 1
+    },
+    {
+      "outputModuleId": 3,
+      "outputId": 0,
+      "inputModuleId": 7,
+      "inputId": 4
+    }
+  ]
+}
